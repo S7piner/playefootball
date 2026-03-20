@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Banishers — Hero Repro</title>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ asset('css/Accueil.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/Accueil.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="{{asset('img/efo.jpg')}}">
 
 <style>
     .hero{
-    background:url("{{ asset('img/efo.jpg') }}") center / cover no-repeat fixed;
+    background:url("{{ secure_asset('img/efo.jpg') }}") center / cover no-repeat fixed;
   }
 
   /* NOUVEAU FOOTER MODERNE */
@@ -338,7 +338,7 @@
     <h1>efootball</h1>
     <h2>Le tournoi en ligne le plus explosif de l'année</h2><br>
     <div class="pill">
-      <a class="btn buy" href="{{ route('participant.login') }}">Participer</a> 
+      <a class="btn buy" href="{{ route('participant.login') }}">Participer</a>
     </div>
   </div>
 </section>
